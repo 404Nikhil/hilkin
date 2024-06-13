@@ -1,6 +1,13 @@
-import about from "../../mds/aboutme.md?raw"
-import Layout from "../Layout"
+import React, { useEffect } from 'react';
+import about from '../../mds/aboutme.md?raw';
+import Layout from '../Layout';
 
-export default function AboutPage() {
-    return <Layout content={about}/>
-}
+const AboutPage = () => {
+  useEffect(() => {
+    document.title = 'hilkin • about';
+  }, []);
+
+  return <Layout content={about} />;
+};
+
+export default AboutPage;

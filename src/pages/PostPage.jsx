@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../Layout';
-import '../index.css'; 
+import { blogPosts } from '../data/blogPosts';
 
 const PostPage = () => {
   const { id } = useParams();
   const [content, setContent] = useState(null);
-  const [fadeIn, setFadeIn] = useState(false); 
+  const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
     const loadContent = async () => {
       try {
         const md = await import(`../../mds/blog/${id}.md?raw`);
         setContent(md.default);
-        setFadeIn(true); 
+        setFadeIn(true);
+
+        // title from blogPosts based on id
+        const post = blogPosts.find(post => post.id === id);
+        if (post) {
+          document.title = `${post.title}`; 
+        } else {
+          document.title = 'hilkin • post not found';
+        }
       } catch (error) {
         setContent('# Post not found');
-        setFadeIn(true); 
+        setFadeIn(true);
+        document.title = 'hilkin • post not found'; 
       }
     };
 

@@ -1,11 +1,15 @@
 // BlogPage.jsx
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { blogPosts } from "../data/blogPosts";
 import "../index.css";
 
 export default function BlogPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "hilkin • blog"; 
+  }, []);
 
   const handleClick = (e, path) => {
     e.preventDefault();
