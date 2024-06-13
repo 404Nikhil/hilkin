@@ -1,35 +1,19 @@
-import React, { useState, useEffect } from "react";
+// BlogPage.jsx
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { blogPosts } from "../data/blogPosts";
 import "../index.css";
 
 export default function BlogPage() {
-  const [fade, setFade] = useState("");
-  const [visible, setVisible] = useState(true);
   const navigate = useNavigate();
 
   const handleClick = (e, path) => {
     e.preventDefault();
-    setFade("fade-out");
-
-    setTimeout(() => {
-      setVisible(false);
-      setTimeout(() => {
-        navigate(path);
-        setVisible(true);
-        setFade("fade-in");
-      }, 250); 
-    }, 250); 
+    navigate(path);
   };
 
-  useEffect(() => {
-    if (!visible) {
-      setFade("fade-in");
-    }
-  }, [visible]);
-
   return (
-    <div className={`text-3xl font-bold flex flex-col justify-center items-center lg:p-8 ${fade}`}>
+    <div className="text-3xl font-bold flex flex-col justify-center items-center lg:p-8">
       <h1>Posts</h1>
       <ul>
         {blogPosts.map((post) => (

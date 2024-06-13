@@ -2,7 +2,8 @@ import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import BlogPage from "./pages/BlogPage";
-import PostPage from "./pages/PostPage";
+import PostPage from "./pages/PostPage"
+import BlogPosts  from "./data/blogposts";
 import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<AboutPage />} />
             {/* <Route path="/projects" element={<ProjectsPage />} /> */}
-            <Route path="/blog/post/:id" element={<PostPage />} />
+            <Route path="/blog/post/:id" element={<BlogPosts />} />
             <Route path="/blog" element={<BlogPage />} />
           </Routes>
         </div>
