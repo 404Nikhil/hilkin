@@ -13,7 +13,7 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="text-3xl font-bold flex flex-col justify-center items-center lg:p-8">
+    <div className="text-3xl font-bold flex flex-col justify-center items-center p-8">
       <h1>Posts</h1>
       <ul>
         {blogPosts.map((post) => (

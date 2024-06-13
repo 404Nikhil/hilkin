@@ -60,18 +60,26 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 0.5s forwards;
+  animation: fadeIn 0.7s forwards;
 }
 
 .fade-out {
-  animation: fadeOut 0.5s forwards;
+  animation: fadeOut 0.7s forwards;
 }
 
 .fade-container {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out; 
+  opacity: 0.3;
+  transition: opacity 0.7s ease-in-out; 
 }
 
 .fade-in {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .fade-container {
+    font-size: 18px;
+    line-height: 1.6; 
+    margin: 0 auto; 
+  }
 }
