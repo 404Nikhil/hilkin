@@ -10,11 +10,11 @@ function App() {
     <Router>
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
-      <div className="flex-grow flex justify-center p-4">
-        <div className="lg:w-3/4 w-full p-6 max-w-full box-border">
+      <div className="flex-grow flex justify-center lg:p-4">
+        <div className="lg:w-3/4 w-full lg:p-6 max-w-full box-border">
           <Routes>
             <Route path="/" element={<AboutPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
+            {/* <Route path="/projects" element={<ProjectsPage />} /> */}
             <Route path="/blog/post/:id" element={<PostPage />} />
             <Route path="/blog" element={<BlogPage />} />
           </Routes>
@@ -35,7 +35,7 @@ function Header() {
         <div>hilkin</div>
         <div>
           <Link to="/" className="px-2">about</Link>
-          <Link to="/projects" className="px-2">projects</Link>
+          {/* <Link to="/projects" className="px-2">projects</Link> */}
           <Link to="/blog" className="px-2">blog</Link>
         </div>
       </div>
