@@ -19,7 +19,7 @@ const BlogPage = () => {
 
   return (
     <div className={`fade-container ${fadeIn ? 'fade-in' : ''}`}>
-      <div className="text-3xl text-white font-bold flex flex-col justify-center items-center p-8">
+      <div className="text-2xl text-white font-bold flex flex-col justify-center items-center p-8">
         <h1>Posts</h1>
         <ul>
           {blogPosts.map((post) => (

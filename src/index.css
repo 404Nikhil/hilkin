@@ -60,16 +60,16 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 0.9s forwards;
+  animation: fadeIn 1s forwards;
 }
 
 .fade-out {
-  animation: fadeOut 0.9s forwards;
+  animation: fadeOut 1s forwards;
 }
 
 .fade-container {
   opacity: 0.4;
-  transition: opacity 0.9s ease-in-out; 
+  transition: opacity 1s ease-in-out; 
 }
 
 .fade-in {
