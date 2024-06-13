@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('../BricolageGrotesque-VariableFont.ttf') format('truetype');
+}
+
+.markdown > * {
+  all: revert;
+}
+
+:root {
+  font-family: "Bricolage Grotesque" !important;
+  line-height: 1.5;
+  font-weight: 500;
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000509;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Avenir', sans-serif !important;
+}
+
+blockquote p {
+  padding: 12px;
+  border-left: 3px solid #696F72; 
+}
+
+a {
+  color: #696F72;
+}
+
+body {
+  overflow-x: hidden;
+}
