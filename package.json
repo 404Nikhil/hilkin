@@ -14,6 +14,7 @@
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
+    "braces": "^3.0.3",
     "express": "^4.19.2",
     "next": "^14.2.3",
     "re-resizable": "^6.9.11",
