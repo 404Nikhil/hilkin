@@ -19,7 +19,7 @@ const BlogPage = () => {
 
   return (
     <div className={`fade-container ${fadeIn ? 'fade-in' : ''}`}>
-      <div className="text-2xl text-indigo-500 font-bold flex flex-col justify-center items-center p-8">
+      <div className="text-2xl text-[#5D7DA5] font-bold flex flex-col justify-center items-center p-8">
         <h1>Posts</h1>
         <ul>
           {blogPosts.map((post) => (
@@ -27,10 +27,11 @@ const BlogPage = () => {
               <Link
                 to={`/blog/post/${post.id}`}
                 onClick={(e) => handleClick(e, `/blog/post/${post.id}`)}
+                className='text-[#5D7DA5]'
               >
                 {post.title}
               </Link>
-              <p className="text-sm text-indigo-500">{post.date}</p>
+              <p className="text-sm text-[#d4d4d4]">{post.date}</p>
             </li>
           ))}
         </ul>

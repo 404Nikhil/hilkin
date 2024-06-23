@@ -192,10 +192,6 @@ progress {
   height: auto;
 }
 
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
 
 [type='search'] {
   -webkit-appearance: textfield;
@@ -204,18 +200,10 @@ progress {
   /* 2 */
 }
 
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
 
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
@@ -224,17 +212,10 @@ Remove the inner padding in Chrome and Safari on macOS.
   /* 2 */
 }
 
-/*
-Add the correct display in Chrome and Safari.
-*/
 
 summary {
   display: list-item;
 }
-
-/*
-Removes the default spacing and border for appropriate elements.
-*/
 
 blockquote,
 dl,
@@ -285,11 +266,6 @@ textarea {
   resize: vertical;
 }
 
-/*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
@@ -305,28 +281,16 @@ textarea::placeholder {
   /* 2 */
 }
 
-/*
-Set the default cursor for buttons.
-*/
-
 button,
 [role="button"] {
   cursor: pointer;
 }
 
-/*
-Make sure disabled buttons don't get the pointer cursor.
-*/
 
 :disabled {
   cursor: default;
 }
 
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
 
 img,
 svg,
@@ -342,17 +306,13 @@ object {
   /* 2 */
 }
 
-/*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
 
 img,
 video {
   max-width: 100%;
   height: auto;
 }
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
+ake elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {
   display: none;
