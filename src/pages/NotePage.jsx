@@ -22,6 +22,7 @@ const NotePage = () => {
 <div className="text-2xl text-[#5D7DA5] font-bold flex flex-col justify-center items-center p-8">
   <h1>Notes</h1>
   <ul className="lg:w-1/2 w-full">
+  <p className='text-[#d4d4d4] text-center text-[16px]'>These notes evolve through three magical stages: essence (early-stage ideas), transmutation (fully-formed thoughts), and elixir (constantly growing).</p>
     {notePosts.map((post) => (
       <li key={post.id} className="my-8 flex items-center justify-between w-full">
         <div className="flex items-center">
