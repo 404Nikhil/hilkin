@@ -5,6 +5,7 @@ import BlogPage from "./pages/BlogPage";
 import ErrorPage from "./pages/Error";
 import PostPage from "./pages/PostPage"
 import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotePage from "./pages/NotePage";
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
             <Route path="/" element={<AboutPage />} />
             {/* <Route path="/projects" element={<ProjectsPage />} /> */}
             <Route path="/blog/post/:id" element={<PostPage />} />
+            <Route path="/notes/post/:id" element={<PostPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/work" element={<WorkPage />} />
             <Route path="/thoughts" element={<ErrorPage />} />
-            <Route path="/notes" element={<ErrorPage />} />
+            <Route path="/notes" element={<NotePage />} />
           </Routes>
         </div>
       </div>
