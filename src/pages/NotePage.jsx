@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { notePosts } from '../data/notesPosts'
+import { notesPosts } from '../data/notesPosts'
 import '../index.css';
 
 const NotePage = () => {
@@ -23,7 +23,7 @@ const NotePage = () => {
   <h1>Notes</h1>
   <ul className="lg:w-1/2 w-full">
   <p className='text-[#d4d4d4] text-center text-[16px]'>These notes evolve through three magical stages: essence (early-stage ideas), transmutation (fully-formed thoughts), and elixir (constantly growing).</p>
-    {notePosts.map((post) => (
+    {notesPosts.map((post) => (
       <li key={post.id} className="my-8 flex items-center justify-between w-full">
         <div className="flex items-center">
           <span className="text-sm text-[#d4d4d4] mr-4">{post.date}</span>

@@ -3,9 +3,10 @@ import AboutPage from "./pages/AboutPage";
 import WorkPage from "./pages/WorkPage";
 import BlogPage from "./pages/BlogPage";
 import ErrorPage from "./pages/Error";
-import PostPage from "./pages/PostPage"
 import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotePage from "./pages/NotePage";
+import BlogPostPage from "./pages/BlogPostPage";
+import NotePostPage from "./pages/NotePostPage";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<AboutPage />} />
             {/* <Route path="/projects" element={<ProjectsPage />} /> */}
-            <Route path="/blog/post/:id" element={<PostPage />} />
-            <Route path="/notes/post/:id" element={<PostPage />} />
+            <Route path="/blog/post/:id" element={<BlogPostPage />} />
+            <Route path="/notes/post/:id" element={<NotePostPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/work" element={<WorkPage />} />
             <Route path="/thoughts" element={<ErrorPage />} />

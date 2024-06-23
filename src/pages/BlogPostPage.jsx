@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Layout from '../Layout';
 import { blogPosts } from '../data/blogPosts';
 
-const PostPage = () => {
+const BlogPostPage = () => {
   const { id } = useParams();
   const [content, setContent] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
@@ -15,7 +15,6 @@ const PostPage = () => {
         setContent(md.default);
         setFadeIn(true);
 
-        // title from blogPosts based on id
         const post = blogPosts.find(post => post.id === id);
         if (post) {
           document.title = `${post.title}`; 
@@ -39,4 +38,4 @@ const PostPage = () => {
   );
 };
 
-export default PostPage;
+export default BlogPostPage;

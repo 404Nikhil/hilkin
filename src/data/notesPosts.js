@@ -1,15 +1,9 @@
-export const notePosts = [
+export const notesPosts = [
     {
-      id: "02-05-2024-tailcall",
-      title: "Tailcall and GraphQl",
-      date: "02-05-2024",
-      status: 'essense'
-    },
-    {
-      id: "06-27-2023-npm-and-vite",
-      title: "Npm and Vite",
-      date: "06-27-2023",
+      id: "important-links",
+      title: "Important links",
+      date: "06-24-2024",
       status: 'elixir'
-    }
+    },
   ];
   
