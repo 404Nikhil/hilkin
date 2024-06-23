@@ -1,6 +1,6 @@
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
+import WorkPage from "./pages/WorkPage";
 import BlogPage from "./pages/BlogPage";
 import ErrorPage from "./pages/Error";
 import PostPage from "./pages/PostPage"
@@ -18,7 +18,7 @@ function App() {
             {/* <Route path="/projects" element={<ProjectsPage />} /> */}
             <Route path="/blog/post/:id" element={<PostPage />} />
             <Route path="/blog" element={<BlogPage />} />
-            <Route path="/work" element={<ErrorPage />} />
+            <Route path="/work" element={<WorkPage />} />
             <Route path="/thoughts" element={<ErrorPage />} />
             <Route path="/notes" element={<ErrorPage />} />
           </Routes>

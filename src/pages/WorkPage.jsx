@@ -1,8 +1,6 @@
+import  work from "../../mds/work.md?raw"
 import React, { useEffect, useState } from 'react';
-import about from '../../mds/aboutme.md?raw';
 import Layout from '../Layout';
-import '../index.css';
-
 
 export default function WorkPage() {
     const [fadeIn, setFadeIn] = useState(false);
