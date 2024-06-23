@@ -2,6 +2,7 @@ import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import BlogPage from "./pages/BlogPage";
+import ErrorPage from "./pages/Error";
 import PostPage from "./pages/PostPage"
 import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,6 +18,9 @@ function App() {
             {/* <Route path="/projects" element={<ProjectsPage />} /> */}
             <Route path="/blog/post/:id" element={<PostPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/work" element={<ErrorPage />} />
+            <Route path="/thoughts" element={<ErrorPage />} />
+            <Route path="/notes" element={<ErrorPage />} />
           </Routes>
         </div>
       </div>
