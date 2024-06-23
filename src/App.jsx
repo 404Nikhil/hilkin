@@ -30,13 +30,13 @@ function App() {
 
 function Header() {
   return (
-    <div className="w-full flex justify-center p-2">
+    <div className="w-full text-indigo-500 flex justify-center p-2">
       <div className="lg:w-1/2 w-full flex justify-between border-b-2 border-stone-500">
         <div>hilkin</div>
         <div>
-          <Link to="/" className="px-2">about</Link>
+          <Link to="/" className="px-2 text-indigo-500">about</Link>
           {/* <Link to="/projects" className="px-2">projects</Link> */}
-          <Link to="/blog" className="px-2">blog</Link>
+          <Link to="/blog" className="px-2 text-indigo-500">blog</Link>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ function Header() {
 function Footer() {
   return (
     <div className="w-full flex justify-center p-4">
-      <div className="lg:w-1/2 w-full flex justify-between border-t-2 border-stone-500">
+      <div className="lg:w-1/2 w-full flex justify-between border-t-2 border-indigo-500">
         <span className="py-2">Nikhil Dhariwal</span>
         <div className="flex py-2 gap-4">
           <Link to="mailto:nikhildhariwal2004@gmail.com">

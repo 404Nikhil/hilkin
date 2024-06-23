@@ -19,7 +19,7 @@ const BlogPage = () => {
 
   return (
     <div className={`fade-container ${fadeIn ? 'fade-in' : ''}`}>
-      <div className="text-2xl text-white font-bold flex flex-col justify-center items-center p-8">
+      <div className="text-2xl text-indigo-500 font-bold flex flex-col justify-center items-center p-8">
         <h1>Posts</h1>
         <ul>
           {blogPosts.map((post) => (
@@ -30,7 +30,7 @@ const BlogPage = () => {
               >
                 {post.title}
               </Link>
-              <p className="text-sm text-white">{post.date}</p>
+              <p className="text-sm text-indigo-500">{post.date}</p>
             </li>
           ))}
         </ul>
