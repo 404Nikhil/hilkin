@@ -13,6 +13,11 @@ Plant Disease detection, Crop Recommendation deep learning models integrated at 
 
 [repo](https://github.com/404Nikhil/plantonics) | [streamlit-repo](https://github.com/404Nikhil/plantonics-streamlit) | need more tuning
 
+## Bypass
+html scraper for paywall websites
+
+[repo](https://github.com/404Nikhil/bypass) 
+
 ## Innerve
 Hackathon website made with love.
 
