@@ -1,10 +1,3 @@
- Reads
-   * [reinforcement-learning-an-introduction](http://incompleteideas.net/book/RLbook2020.pdf)
-   * [The Little Book of Deep Learning](https://fleuret.org/public/lbdl.pdf)
-   * [The Novice's LLM Training Guide](https://rentry.co/llm-training)
-   * [CodeQA](https://sankalp1999.notion.site/Learnings-from-codeQA-Part-2-ed70346f75364e0583a9173d7ea7dcf1#67e1d2885ec04ad983fd4ac20f6b3926)
-   * [Lil'og](https://lilianweng.github.io/)
-
  GTD for research
    * [Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/)
    * [Specializing in Problems We Don't Understand](https://www.lesswrong.com/posts/CSZnj2YNMKGfsMbZA/specializing-in-problems-we-don-t-understand)
