@@ -1,4 +1,9 @@
 export const blogPosts = [
+  {
+    id: "jwt",
+    title: "JSON Web Tokens",
+    date: "13-07-2024",
+  },
     {
       id: "tailcall",
       title: "Tailcall and GraphQl",
