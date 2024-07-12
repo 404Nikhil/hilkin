@@ -1,10 +1,9 @@
----
-layout: post
+<!-- layout: post
 title: "JWT Tokens and JWT vs. Sessions"
 description: "An in-depth look at JSON Web Tokens"
 pubDate: "July 13, 2024"
 heroImage: "/placeholder-hero.jpg"
----
+--->
 
 ## What is JWT?
 
