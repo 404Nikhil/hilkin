@@ -76,6 +76,4 @@ The Refresh Access Token API allows clients to request a new access token using 
 
 This functionality ensures continuous access to protected resources without requiring the user to reauthenticate manually. By utilizing the refresh token, the API securely refreshes the access token and updates it in a cookie, ensuring seamless and uninterrupted access to authorized endpoints.
 
----
-
 By understanding and implementing JWTs effectively, you can build more secure and efficient authentication systems for your applications.
