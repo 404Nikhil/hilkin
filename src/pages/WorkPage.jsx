@@ -6,7 +6,7 @@ export default function WorkPage() {
     const [fadeIn, setFadeIn] = useState(false);
   
     useEffect(() => {
-      document.title = 'hilkin • work';
+      document.title = 'Nikhil • work';
       setFadeIn(true);
     }, []);
   

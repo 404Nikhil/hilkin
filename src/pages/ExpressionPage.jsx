@@ -8,7 +8,7 @@ const ExpressionPage = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    document.title = 'hilkin • notes';
+    document.title = 'Nikhil • notes';
     setFadeIn(true);
   }, []);
 
@@ -27,8 +27,8 @@ const ExpressionPage = () => {
         <div className="flex items-center">
           <span className="text-sm text-[#d4d4d4] mr-4">{post.date}</span>
           <Link
-            to={`/notes/post/${post.id}`}
-            onClick={(e) => handleClick(e, `/notes/post/${post.id}`)}
+            to={`/expression/post/${post.id}`}
+            onClick={(e) => handleClick(e, `/expression/post/${post.id}`)}
             className='text-[#5D7DA5] text-[18px] flex-grow'
           >
             {post.title}

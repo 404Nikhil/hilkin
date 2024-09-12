@@ -8,7 +8,7 @@ const NotePage = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    document.title = 'hilkin • notes';
+    document.title = 'Nikhil • notes';
     setFadeIn(true);
   }, []);
 

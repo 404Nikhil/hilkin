@@ -8,7 +8,7 @@ const BlogPage = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    document.title = 'hilkin • blog';
+    document.title = 'Nikhil • blog';
     setFadeIn(true);
   }, []);
 

@@ -7,11 +7,13 @@ import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotePage from "./pages/NotePage";
 import BlogPostPage from "./pages/BlogPostPage";
 import NotePostPage from "./pages/NotePostPage";
+import ExpressionPage from "./pages/ExpressionPage";
+import ExpressionPostPage from "./pages/ExpressionPostPage";
 
 function App() {
   return (
     <Router>
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden bg-[#030712]">
       <Header />
       <div className="flex-grow flex justify-center lg:p-4">
         <div className="lg:w-3/4 w-full lg:p-6 max-w-full box-border">
@@ -20,9 +22,10 @@ function App() {
             {/* <Route path="/projects" element={<ProjectsPage />} /> */}
             <Route path="/blog/post/:id" element={<BlogPostPage />} />
             <Route path="/notes/post/:id" element={<NotePostPage />} />
+            <Route path="/expression/post/:id" element={<ExpressionPostPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/work" element={<WorkPage />} />
-            <Route path="/thoughts" element={<ErrorPage />} />
+            <Route path="/expression" element={<ExpressionPage />} />
             <Route path="/notes" element={<NotePage />} />
           </Routes>
         </div>
@@ -39,12 +42,12 @@ function Header() {
   return (
     <div className="w-full text-[#5D7DA5] flex justify-center p-2">
       <div className="lg:w-1/2 w-full flex justify-between border-b-2 border-stone-500">
-        <div>hilkin</div>
+        <div>Nikhil Dhariwal</div>
         <div>
           <Link to="/" className="px-2 text-[#5D7DA5]">about</Link>
           <Link to="/blog" className="px-2 text-[#5D7DA5]">techie</Link>
           <Link to="/work" className="px-2 text-[#5D7DA5]">work</Link>
-          <Link to="/thoughts" className="px-2 text-[#5D7DA5]">thoughts</Link>
+          {/* <Link to="/expression" className="px-2 text-[#5D7DA5]">expression</Link> */}
           <Link to="/notes" className="px-2 text-[#5D7DA5]">notes</Link>
         </div>
       </div>

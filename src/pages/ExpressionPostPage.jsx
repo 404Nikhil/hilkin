@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../Layout';
-import { notesPosts } from '../data/notesPosts';
+import { expressionPosts } from '../data/expressionPosts';
 
-const NotePostPage = () => {
+const ExpressionPostPage = () => {
   const { id } = useParams();
   const [content, setContent] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
@@ -11,20 +11,20 @@ const NotePostPage = () => {
   useEffect(() => {
     const loadContent = async () => {
       try {
-        const md = await import(`../../mds/notes/${id}.md?raw`);
+        const md = await import(`../../mds/expression/${id}.md?raw`);
         setContent(md.default);
         setFadeIn(true);
 
-        const post = notesPosts.find(post => post.id === id);
+        const post = expressionPosts.find(post => post.id === id);
         if (post) {
-          document.title = `${post.title}`; 
+          document.title = `${post.title}`;
         } else {
-          document.title = 'hilkin • post not found';
+          document.title = 'Nikhil • post not found';
         }
       } catch (error) {
         setContent('# Post not found');
         setFadeIn(true);
-        document.title = 'Nikhil • post not found'; 
+        document.title = 'Nikhil • post not found';
       }
     };
 
@@ -33,9 +33,13 @@ const NotePostPage = () => {
 
   return (
     <div className={`fade-container ${fadeIn ? 'fade-in' : ''}`}>
-      {content && <Layout content={content} />}
+      {content && (
+        <div className="poem-container">
+          <Layout content={content} />
+        </div>
+      )}
     </div>
   );
 };
 
-export default NotePostPage;
+export default ExpressionPostPage;

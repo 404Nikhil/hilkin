@@ -19,12 +19,12 @@ const BlogPostPage = () => {
         if (post) {
           document.title = `${post.title}`; 
         } else {
-          document.title = 'hilkin • post not found';
+          document.title = 'Nikhil • post not found';
         }
       } catch (error) {
         setContent('# Post not found');
         setFadeIn(true);
-        document.title = 'hilkin • post not found'; 
+        document.title = 'Nikhil • post not found'; 
       }
     };
 
