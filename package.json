@@ -16,7 +16,7 @@
     "@babel/preset-react": "^7.24.7",
     "braces": "^3.0.3",
     "express": "^4.19.2",
-    "next": "^14.2.3",
+    "next": "^14.2.10",
     "re-resizable": "^6.9.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
