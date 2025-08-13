@@ -36,7 +36,7 @@ export const blogPosts = [
     },
     {
       id: "server-side",
-      title: "not requiring server-side rendering (SSR)",
+      title: "not requiring SSR",
       date: "05-26-2023",
     },
   ];
