@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bricolageGrotesque: ['Bricolage Grotesque', 'sans-serif'],
+        mono: ['"Geist Mono"', 'monospace'], // for monospace class
+        sans: ['"Geist Mono"', 'sans-serif'], // optional: make it the main font
       },
     },
   },

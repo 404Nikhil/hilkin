@@ -1,5 +1,15 @@
 export const blogPosts = [
   {
+    id: "seeding",
+    title: "seeding and peering",
+    date: "01-12-2025",
+  },
+  {
+    id: "wifitether",
+    title: "Control Your Wi-Fi & Tethering from CLI",
+    date: "11-15-2024",
+  },
+  {
     id: "jwt",
     title: "JSON Web Tokens",
     date: "13-07-2024",

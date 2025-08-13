@@ -9,7 +9,7 @@ import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 export default function ContentViewer({ content }) {
   return (
     <div className="flex w-full justify-center  overflow-hidden">
-      <div className="px-10 md:w-6/12 w-full ">
+      <div className="px-10 md:w-6/12 w-full font-normal font-geist">
         <Markdown
           className="markdown"
           remarkPlugins={[remarkGfm]}

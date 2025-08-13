@@ -1,22 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  src: url('../BricolageGrotesque-VariableFont.ttf') format('truetype');
-}
 
 .markdown > * {
   all: revert;
 }
+.font-geist, 
+.font-geist * {
+  font-family: "Geist Mono", monospace !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  color: #d1d5db !important;
+}
+
+
 
 :root {
 
   line-height: 1.5;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1E1F20;
+  background-color: #101110;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

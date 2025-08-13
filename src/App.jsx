@@ -24,7 +24,7 @@ function App() {
             <Route path="/notes/post/:id" element={<NotePostPage />} />
             <Route path="/expression/post/:id" element={<ExpressionPostPage />} />
             <Route path="/blog" element={<BlogPage />} />
-            <Route path="/work" element={<WorkPage />} />
+            {/* <Route path="/work" element={<WorkPage />} /> */}
             <Route path="/expression" element={<ExpressionPage />} />
             <Route path="/notes" element={<NotePage />} />
           </Routes>
@@ -46,7 +46,7 @@ function Header() {
         <div>
           <Link to="/" className="px-2 text-[#5D7DA5]">about</Link>
           <Link to="/blog" className="px-2 text-[#5D7DA5]">techie</Link>
-          <Link to="/work" className="px-2 text-[#5D7DA5]">work</Link>
+          {/* <Link to="/work" className="px-2 text-[#5D7DA5]">work</Link> */}
           {/* <Link to="/expression" className="px-2 text-[#5D7DA5]">expression</Link> */}
           <Link to="/notes" className="px-2 text-[#5D7DA5]">notes</Link>
         </div>
