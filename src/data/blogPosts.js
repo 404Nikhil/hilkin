@@ -6,7 +6,7 @@ export const blogPosts = [
   },
   {
     id: "wifitether",
-    title: "Control Your Wi-Fi & Tethering from CLI",
+    title: "Interfaces from CLI",
     date: "11-15-2024",
   },
   {
